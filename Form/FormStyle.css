@@ -1,0 +1,84 @@
+*{
+	margin: 0 0 0 0;
+}
+div{
+	margin-left: 10px;
+	margin-top: 7px;
+}
+input, select, textarea{
+	font-size: 31pt;
+	font-family: Lobster;
+}
+input[type=radio], input[type=checkbox] {
+    border: 0px;
+    width: 35px;
+    height: 35px;
+}
+input[type=color]{
+	border: none;
+	width: 100px;
+	height: 32px;
+}
+
+input[type=date]{
+	width: 330px;
+	height: 41px;
+}
+select{
+	font-size: 26pt;
+	width: 280px;
+	height: 41px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #739ae2;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    margin: 5px 7px;
+    cursor: pointer;
+}
+textarea{
+	font-size: 26pt;
+	
+	width: 450px;
+	max-width: 900px;
+	min-width: 450px;
+
+	height: 40px;
+	max-height: 40px;
+	min-height: 40px;
+}
+
+div.about label{
+	text-align: center;
+}
+
+header, footer {
+  margin: 0 0 0 0;
+  font-size: 40pt;
+  color: white;
+  background-color: #bbbdc3;
+  text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+footer{
+	font-size: 17pt;
+	font-family: Charmonman;
+
+}
+
+body{
+	font-family: Lobster;
+	font-size: 32pt;
+	background-image: url(https://www.fg-a.com/wallpapers/white-background-geo-shapes.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+  div.example {
+    display: flex;
+  }
+}

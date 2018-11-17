@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link rel="stylesheet" href="FormStyle.css">
+	<link href="https://fonts.googleapis.com/css?family=Charmonman:700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+<body>
+	<header>Questions</header>
+	<form>
+		<div class="name">
+			<label for="FirstName">First Name:</label>
+			<input type="text" name="FirstName" id="FirstName" placeholder="Sanan" required>
+
+			<label for="SecondName">Second Name:</label>
+			<input type="text" name="SecondName" id="SecondName" placeholder="Yusibov" required>
+		</div>
+
+		<div class="mail">
+			<label for="email"> Email:</label>
+			<input type="email" name="email" id="email" placeholder="Your email" required>
+		</div>
+
+		<div class="gender">		
+			<label>Gender </label>
+			<label for="Male"> Male:</label>
+			<input type="radio" name="Gender" id="Male" value="Male">
+
+			<label for="Female"> Female:</label>
+			<input type="radio" name="Gender" id="Female" value="Female">
+
+			<!-- <label for="Other"> Other:</label>
+			<input type="radio" name="Gender" id="Other" value="Other"> -->
+		</div>
+
+		<div class="logPass">
+			<label for="log"> Login:</label>
+			<input type="text" name="login" id="log" placeholder="your login" pattern=".{5,10}" required>
+
+			<label for="pass"> Password:</label>
+			<input type="password" name="pass" id="pass" placeholder="your password" pattern=".{5,10}" required title="Password must be between 5 and 10 characters">
+		</div>
+
+		<div class="birth">
+			<label for="Birth">Birthday: </label>
+				<input type="date" name="Birthday" id="Birth" required>
+		</div>
+
+		<div class="group">
+			<label for="GroupSelect">Your Group: </label>
+			<select name="Group" id="GroupSelect" required>
+    				<option value="" disabled selected>Select...</option>
+					<option>Computer Science</option>
+					<option>Chemical eng.</option>
+					<option>Oil & Gas</option>
+					<option>Geophysics</option>
+			</select>
+		</div>
+
+		<div class="color">
+			<label for="color">Your favorite color: </label>
+			<input type="color" name="FavColor" id="color" value="#ff0000" placeholder="#FFFFFF">
+		</div>
+
+		<div class="about">
+			<label for="text">About you:</label>
+			<textarea id="text" name="text" placeholder="Write something about you.."></textarea>
+
+		</div>
+
+		<div class="check">
+			<label for="agree">I agree to the terms and conditions </label>
+			<input type="checkbox" name="agree" required>
+		</div>
+
+		<input type="submit" text="submit">
+	</form>
+	
+	<footer>
+		Unfortunately, this form sends data so far only to its page (since I do not have a database where I could write). But you can check for performance through the URL
+	</footer>
+</body>
+</html>
