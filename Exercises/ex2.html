@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 2</title>
+</head>
+<body>
+	<h1>Exercise 2</h1>
+	<p id="ex2"></p>
+
+	<script>
+		// Exercise 2
+		numbers=[1];
+		var a = 1597;
+		var amount = "";
+		numbers.forEach(Exercise2);
+		document.getElementById("ex2").innerHTML = amount;
+		function Exercise2(){
+			amount = "Amount: " + a + "<br>";
+			amount = amount + "Number of 200: " + Math.floor(a/200) + "<br>";
+			a = a - Math.floor(a/200) * 200;
+			amount = amount + "Number of 100: " + Math.floor(a/100) + "<br>";
+			a = a - Math.floor(a/100) * 100;
+			amount = amount + "Number of 50:  " + Math.floor(a/50) + "<br>";
+			a = a - Math.floor(a/50) * 50;
+			amount = amount + "Number of 20:  " + Math.floor(a/20) + "<br>";
+			a = a - Math.floor(a/20) * 20;
+			amount = amount + "Number of 10:  " + Math.floor(a/10) + "<br>";
+			a = a - Math.floor(a/10) * 10;
+			amount = amount + "Number of 5:   " + Math.floor(a/5) + "<br>";
+			a = a- Math.floor(a/5) * 5;
+			amount = amount + "Number of 1:   " + Math.floor(a/1) + "<br>";
+			a = a - Math.floor(a/1) * 1;
+		}
+	</script>
+</body>
+</html>

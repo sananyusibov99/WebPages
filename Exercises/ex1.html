@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 1</title>
+</head>
+<body>
+	<h1>Exercise 1</h1>
+	<p>Answer is 153 and 371</p>
+	<p>Example from PDF 253 is not correct: 2^3 + 5^3 + 3^3 == 160 not 253</p>
+	<p id="ex1"></p>
+
+
+	<script>
+		// Exercise 1
+		var txt = "";
+		var numbers = [1];
+		numbers.forEach(Exercise1);
+		document.getElementById("ex1").innerHTML = txt;
+
+		function Exercise1() {
+			for (var i = 1; i <= 9; i++) {
+				for (var j = 1; j <= 9; j++) {
+					for (var k = 1; k <= 9; k++) {
+						if (100*i + 10*j + 1*k == Math.pow(i,3) + Math.pow(j,3) + Math.pow(k,3)){
+							ABC = 100*i + 10*j + 1*k;
+							txt = txt + ABC + "<br>";
+
+						}
+					}
+				}
+			}
+		}
+		console.log("Hello");
+	</script>
+
+</body>
+</html>

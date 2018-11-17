@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Exercise 3</title>
+</head>
+<body>
+	<h1>Exercise 3</h1>
+	<input type="text" name="Value:" id="input2">
+    <input type="button" value="Check" id="validate">
+
+
+	<script>
+		// Exercise 3
+		var input = document.getElementById("input2");
+	    var button = document.getElementById("validate");
+	    button.onclick = function() {
+	        var card_id = input.value;
+	        console.log("Check of validation of card ID " + card_id);
+	        var card_id_arr = [];
+	        for (let i = 0; i < card_id.length; i++) {
+	            if (card_id.charCodeAt(i) < 48 || card_id.charCodeAt(i) > 58) {
+	                console.log("Invalid card number!");
+	                return;
+	            }
+	            card_id_arr.push(card_id.charCodeAt(i) - 48);
+	        }
+	        var doubled_card_id = card_id_arr.slice();
+	        for (let i = card_id_arr.length - 2; i >= 0; i -= 2) {
+	            var tmp = doubled_card_id[i] * 2;
+	            doubled_card_id[i] = 0;
+	            while (tmp > 0) {
+	                doubled_card_id[i] += tmp % 10;
+	                tmp  = Math.floor(tmp / 10);
+	            }
+	        }
+	        var sum = 0;
+	        for (let i = 0; i < doubled_card_id.length - 1; i++) {
+	            sum += doubled_card_id[i];
+	        }
+	        console.log(doubled_card_id.toString());
+	        if (10 - sum % 10 == doubled_card_id[doubled_card_id.length - 1]) {
+	            console.log("The card is OK");
+	        } else {
+	            console.log("The card is not OK");
+	        }
+    	}
+	</script>
+</body>
+</html>
