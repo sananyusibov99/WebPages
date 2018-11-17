@@ -1,0 +1,67 @@
+a{
+	color:blue;
+}
+a:hover{
+	color:hotpink;
+}
+.Eifell {
+    /*top: 160px;*/
+    width: 100%;
+    min-height: 400px;
+    background-size: 100%;
+    height: auto;
+    position: relative;
+	background-image: url(http://www.yulinhancai.com/templates/images/banner4.jpg);
+    background-position: 25% 50%;
+
+}
+
+.Middle {
+	top: 120px;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    padding: 1px;
+    position: relative;
+    color: snow;
+	background-color: grey;
+	text-align: center;
+    font-style: italic;
+
+}
+
+.first {
+	font-size: 42px;
+	left: 80px;
+	width: 40%;
+    float: left;
+    display : inline‐block;
+    margin-top: 30px;
+    margin-left: 100px;
+    color: gray;
+}
+
+.second {
+	font-size: 20px;
+	width: 30%;
+	float: right;
+	margin-top: 30px;
+	margin-right: 250px;
+	display : inline‐block;
+	color:gray;
+}
+.big{
+	width: 100%;
+	display : inline‐block;
+}
+.flag{
+	width: 500px;
+	margin-left:100px;
+}
+.map{
+	margin: 12%;
+}
+footer{
+	margin-left: 10%;
+	padding-bottom: 30px;
+}
